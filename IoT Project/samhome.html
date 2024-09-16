@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Signup</title>
+    <style>
+        body {
+    background-color: #F1C40F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-container {
+    padding: 20px;
+}
+
+.logo {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+}
+
+.options-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 25px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #555555;
+
+}
+@keyframes move {
+    0% { transform: translateX(0%); }
+    50% { transform: translateX(100%); }
+    100% { transform: translateX(0%); }
+}
+
+.logo {
+    position: fixed;
+    animation: move 10s linear infinite;
+    top: 100px;
+    left: 400px;
+}
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="DriveIn.jpeg" alt="Logo" class="logo">
+    </div>
+    <div class="options-container">
+        <button class="button" onclick="window.location.href='samsignin.html'">Login</button>
+        <button class="button" onclick="window.location.href='samsignup.html'">Sign Up</button>
+    </div>
+</body>
+</html>

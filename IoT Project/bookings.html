@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Booking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .seat {
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            margin: 5px;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .seat.booked {
+            background-color: red;
+        }
+
+        #payment-info {
+            margin-top: 20px;
+        }
+
+        #payment-number {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="seat" onclick="bookSeat(this)"></div>
+        <div class="seat" onclick="bookSeat(this)"></div>
+        <div class="seat" onclick="bookSeat(this)"></div>
+        <div class="seat" onclick="bookSeat(this)"></div>
+        <div class="seat" onclick="bookSeat(this)"></div>
+    </div>
+
+    <div id="payment-info">
+        <p>Total amount: <span id="total-amount">0</span></p>
+        <button onclick="generatePaymentNumber()">Generate Booking Number</button>
+        <p id="payment-number-container">Booking Number: <span id="payment-number"></span></p>
+    </div>
+
+    <script>
+        let bookedSeats = 0;
+        let totalAmount = 0;
+
+        function bookSeat(seat) {
+            if (!seat.classList.contains('booked')) {
+                seat.classList.add('booked');
+                bookedSeats++;
+                totalAmount += 50;
+                document.getElementById('total-amount').textContent = totalAmount;
+            }
+        }
+
+        function generatePaymentNumber() {
+            let paymentNumber = Math.floor(Math.random() * 1000);
+            document.getElementById('payment-number').textContent = paymentNumber;
+        }
+    </script>
+</body>
+</html>

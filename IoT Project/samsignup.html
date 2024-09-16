@@ -1,0 +1,149 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Car Booking System</title> 
+        <style> body { font-family: Arial, sans-serif; background-color: black; }
+        .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        }
+
+        .booking-form {
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+        padding: 30px;
+        border: 1px solid #DAF7A6;
+        border-radius: 5px;
+        background-color: #F1C40F;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+        margin-bottom: 20px;
+        }
+
+        .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        }
+
+        .form-group input {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #d4f399;
+        background-color: #e3f8bb;
+        border-radius: 3px;
+        }
+
+        .form-group select {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #DAF7A6;
+        border-radius: 3px;
+        }
+
+        .form-group textarea {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #DAF7A6;
+        background-color: #DAF7A6;
+        border-radius: 3px;
+        }
+
+        .btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        }
+
+        .btn:hover {
+        background-color: #0056b3;
+        }
+        .seat {
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            margin: 5px;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .seat.booked {
+            background-color: red;
+        }
+
+        #payment-info {
+            margin-top: 20px;
+        }
+
+        #payment-number {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Create an Account</h1>
+        <div class="container"> 
+            <form class="booking-form"> 
+                <div class="form-group"> 
+                    <label for="name"> Name: </label> 
+                    <input type="text" id="name" name="name" required> 
+                </div> 
+                <div class="form-group"> 
+                    <label for="phone">Phone: </label> 
+                    <input type="text" id="phone" name="phone" required> 
+                </div> 
+                <div class="form-group"> 
+                    <label for="email">Email: </label> 
+                    <input type="text" id="email" name="email" required> 
+                </div> 
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div> 
+                <div class="form-group">
+                    <label for="license">Driving License Number:</label>
+                    <input type="text" id="license" name="license" required>
+                </div>
+                <div class="form-group">
+                    <label for="aadhaar">Aadhaar:</label>
+                    <input type="text" id="aadhaar" name="aadhaar" required>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                
+                <div class="form-group"> 
+                    <button class="btn" type="submit" onclick="window.location.href='samplebook.html'">Create and Book</button> 
+                </div> 
+            </form> 
+        </div> 
+    </body>
+</html>

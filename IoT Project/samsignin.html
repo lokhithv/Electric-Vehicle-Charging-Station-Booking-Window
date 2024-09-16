@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style> body { font-family: Arial, sans-serif; background-color: black; }
+    .container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    }
+    h1{
+      text-align: center;
+      color: white;
+    }
+    .booking-form {
+    width: 50%;
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #DAF7A6;
+    border-radius: 5px;
+    background-color: #F1C40F;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+    margin-bottom: 20px;
+    }
+
+    .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    }
+
+    .form-group input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #d4f399;
+    background-color: #e3f8bb;
+    border-radius: 3px;
+    }
+
+    .form-group select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #DAF7A6;
+    border-radius: 3px;
+    }
+
+    .form-group textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #99de1a;
+    background-color: #DAF7A6;
+    border-radius: 3px;
+    }
+
+    .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    }
+
+    .btn:hover {
+    background-color: #0056b3;
+    }
+    </style>
+</head>
+<body>
+  <h1>Sign In</h1>
+  <div class="container">
+    <form class="booking-form">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      
+    </form>
+  </div>
+  <div class="container">
+  <button class="btn" type="submit" onclick="window.location.href='samplebook.html'">Sign In</button>
+  </div>
+</body>
+</html>
